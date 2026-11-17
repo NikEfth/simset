@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(SimSET VERSION 2.9.2 LANGUAGES C)
 
-# we will install files in include/${VERSIONDIR}, lib/cmake/${VERSIONDIR}
+# we will install files in include/${VERSION_DIR}, lib/cmake/${VERSION_DIR}
 set (VERSION_DIR SimSET-${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR})
 
 set(CMAKE_C_STANDARD 90)
@@ -54,7 +54,7 @@ add_library(SimSET::iface ALIAS simset_iface)
 set_target_properties(simset_iface PROPERTIES EXPORT_NAME iface)
 target_include_directories(simset_iface INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
-  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${VERSIONDIR}/simset>
+  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}/simset>
 )
 target_compile_definitions(simset_iface INTERFACE ${SIMSET_DEFS}
 kSimSET_Path="${CMAKE_CURRENT_SOURCE_DIR}")
