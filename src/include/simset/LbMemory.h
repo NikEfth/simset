@@ -37,7 +37,7 @@
 #define LOCALE extern
 #endif
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 #define LBMMFg_Accounting LBFlag0 /* Perform memory accounting */
 

@@ -53,7 +53,7 @@
 #include <time.h>
 #endif
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* CONSTANTS */
 

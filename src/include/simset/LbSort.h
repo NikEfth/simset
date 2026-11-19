@@ -55,8 +55,8 @@
 #ifndef LB_SORT
 #define LB_SORT
 
-#include "LbTypes.h"
-#include "SystemDependent.h"
+#include "simset/LbTypes.h"
+#include "simset/SystemDependent.h"
 
 /* CONSTANTS */
 #define LBSORT_KEYSIZE                                                        \

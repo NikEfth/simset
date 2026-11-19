@@ -60,10 +60,10 @@
 #include <math.h>
 #include <stdio.h>
 
-#include "LbMacros.h"
-#include "LbTypes.h"
+#include "simset/LbMacros.h"
+#include "simset/LbTypes.h"
 
-#include "Photon.h"
+#include "simset/Photon.h"
 
 /* CONSTANTS */
 /* TYPES */

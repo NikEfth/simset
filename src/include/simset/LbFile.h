@@ -47,7 +47,7 @@
 #ifndef LIB_FILE
 #define LIB_FILE
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* CONSTANTS */
 

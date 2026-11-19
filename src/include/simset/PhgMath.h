@@ -104,7 +104,7 @@
 #ifndef PHG_MATH
 #define PHG_MATH
 
-#include "LbMath.h"
+#include "simset/LbMath.h"
 
 /* CONSTANTS */
 #define PHGMATH_PI LBMATH_PI

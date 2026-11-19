@@ -32,7 +32,7 @@
 #ifndef LIB_ERROR
 #define LIB_ERROR
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* FLAGS */
 #define ERFgEcho LBFlag0

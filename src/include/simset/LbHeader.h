@@ -39,7 +39,7 @@
 #ifndef LBHEADER
 #define LBHEADER
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* CONSTANTS */
 

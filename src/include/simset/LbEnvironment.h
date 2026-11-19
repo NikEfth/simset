@@ -32,7 +32,7 @@
 #ifndef LIB_ENVIRONMENT
 #define LIB_ENVIRONMENT
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* CONSTANTS */
 #define LBEnMxArgLen 32

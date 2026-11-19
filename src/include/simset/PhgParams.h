@@ -96,7 +96,7 @@
 #define LOCALE extern
 #endif
 
-#include "PhgIsotopes.h"
+#include "simset/PhgIsotopes.h"
 
 /* PROGRAM CONSTANTS */
 

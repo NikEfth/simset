@@ -31,7 +31,7 @@
  *
  *********************************************************************************/
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* PROTOTYPES */
 void LbDbEnter (Boolean *continuePtr);

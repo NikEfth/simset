@@ -48,9 +48,9 @@
 #ifndef MT19937_RNG
 #define MT19937_RNG
 
-#include "LbInterface.h"
-#include "LbTypes.h"
-#include "SystemDependent.h"
+#include "simset/LbInterface.h"
+#include "simset/LbTypes.h"
+#include "simset/SystemDependent.h"
 
 /* initializes state[N] with a seed */
 void init_genrand (unsigned long s);

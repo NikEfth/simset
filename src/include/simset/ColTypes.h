@@ -34,9 +34,9 @@
 #ifndef COL_TYPES
 #define COL_TYPES
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
-#include "Photon.h"
+#include "simset/Photon.h"
 
 /* CONSTANTS */
 #define COL_MAX_SCATTERS 9 /* Maximum number of scatters tracked */

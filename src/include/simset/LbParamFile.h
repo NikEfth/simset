@@ -67,7 +67,7 @@
 #ifndef LBPF_PARAM
 #define LBPF_PARAM
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* CONSTANTS */
 #define LBPF_PARAM_LEN 256

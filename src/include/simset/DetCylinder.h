@@ -53,7 +53,7 @@
 #ifndef DETECTOR_CYLINDER_HDR
 #define DETECTOR_CYLINDER_HDR
 
-#include "Detector.h"
+#include "simset/Detector.h"
 
 #ifdef DETECTOR_CYLINDER
 #define LOCALE

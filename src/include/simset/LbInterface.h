@@ -59,7 +59,7 @@
 
 #include <stdio.h>
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
 /* CONSTANTS */
 #define LBINYes 1
