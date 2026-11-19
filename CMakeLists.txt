@@ -53,8 +53,8 @@ add_library(simset_iface INTERFACE)
 add_library(SimSET::iface ALIAS simset_iface)
 set_target_properties(simset_iface PROPERTIES EXPORT_NAME iface)
 target_include_directories(simset_iface INTERFACE
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
-  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}/simset>
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/simset>
+  $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}>
 )
 target_compile_definitions(simset_iface INTERFACE ${SIMSET_DEFS}
 kSimSET_Path="${CMAKE_CURRENT_SOURCE_DIR}")
@@ -106,8 +106,8 @@ if(UNIX AND NOT APPLE)
 endif()
 
 # ---- Install headers ----
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/src/"
-  DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}/simset"
+install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include"
+  DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}"
   FILES_MATCHING PATTERN "*.h"
 )
 

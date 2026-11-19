@@ -39,7 +39,7 @@ SpacesInParensOptions:
 ColumnLimit:     130
 IndentPPDirectives: AfterHash
 PointerAlignment: Left
-SortIncludes:    false
+SortIncludes:    Never
 SortUsingDeclarations: false
 SpaceBeforeParens: ControlStatements
 PackConstructorInitializers: Never
