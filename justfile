@@ -18,8 +18,12 @@ cmake_build_dir := "build"
 @configure:
     cmake -GNinja -S . -B {{cmake_build_dir}} \
         -DCMAKE_BUILD_TYPE:STRING={{cmake_build_type}} \
-        -DCMAKE_INSTALL_PREFIX:PATH={{cmake_install_prefix}}
+        -DCMAKE_INSTALL_PREFIX:PATH={{cmake_install_prefix}} \
+        -DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=TRUE \
+        -DCMAKE_INSTALL_RPATH:PATH="{{cmake_install_prefix}}/lib"
 
 @build: configure
-    # Optional: cmake --install {{cmake_build_dir}}
     cmake --build {{cmake_build_dir}} --config {{cmake_build_type}}
+
+@install: build
+    cmake --install {{cmake_build_dir}} --config {{cmake_build_type}}
