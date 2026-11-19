@@ -57,6 +57,7 @@ SIMSET_PATH_USR = $(SIMSET_PATH)
 MKFILES = $(SIMSET_PATH_USR)/make.files
 PHG_SRC = $(SIMSET_PATH)/src
 PHG_SRC_USR = $(SIMSET_PATH_USR)/src
+PHG_INC_DIR = ${PHG_SRC}/include
 OBJ_DIR = $(SIMSET_PATH_USR)/obj
 PROGRAMS = $(SIMSET_PATH_USR)/bin
 
@@ -90,11 +91,11 @@ COMPILER = cc
 # Select the debug or nodebug CFLAGS option:  debug has added data checking
 #  and is recommended
 # Choose between the last two options instead if your compiler does not yet support -iquote
-CFLAGS = ${OS_CFLAGS} -c -DPHG_DEBUG -std=gnu90 -fPIC -iquote"${PHG_SRC}" -DkSimSET_Path='"${SIMSET_PATH}"'
-# CFLAGS = ${OS_CFLAGS} -c -iquote"${PHG_SRC}" -DkSimSET_Path='"${SIMSET_PATH}"' 
+CFLAGS = ${OS_CFLAGS} -c -DPHG_DEBUG -std=gnu90 -fPIC -iquote"${PHG_INC_DIR}" -DkSimSET_Path='"${SIMSET_PATH}"'
+# CFLAGS = ${OS_CFLAGS} -c -iquote"${PHG_INC_DIR}" -DkSimSET_Path='"${SIMSET_PATH}"' 
 # 
-# CFLAGS = ${OS_CFLAGS} -c -DPHG_DEBUG -I"${PHG_SRC}" -DkSimSET_Path='"${SIMSET_PATH}"' 
-# CFLAGS = ${OS_CFLAGS} -c -I"${PHG_SRC}" -DkSimSET_Path='"${SIMSET_PATH}"' 
+# CFLAGS = ${OS_CFLAGS} -c -DPHG_DEBUG -I"${PHG_INC_DIR}" -DkSimSET_Path='"${SIMSET_PATH}"' 
+# CFLAGS = ${OS_CFLAGS} -c -I"${PHG_INC_DIR}" -DkSimSET_Path='"${SIMSET_PATH}"' 
 
 
 PROGRAM = ${PROGRAMS}/simset
@@ -105,46 +106,46 @@ MKFILE = ${MKFILES}/simset.make
 # of specifying the header dependencies, but that's the
 # way it is for now.
 PHG_LB_HDRS = \
-	${PHG_SRC}/SystemDependent.h\
-	${PHG_SRC}/LbTypes.h\
-	${PHG_SRC}/LbError.h\
-	${PHG_SRC}/LbDebug.h\
-	${PHG_SRC}/LbEnvironment.h\
-	${PHG_SRC}/LbFile.h\
-	${PHG_SRC}/LbMath.h\
-	${PHG_SRC}/LbMemory.h\
-	${PHG_SRC}/LbParamFile.h\
-	${PHG_SRC}/LbInterface.h\
-	${PHG_SRC}/LbConvert.h\
-	${PHG_SRC}/LbSort.h\
-	${PHG_SRC}/LbTiming.h\
-	${PHG_SRC}/Lb2DGeometry.h\
-	${PHG_SRC}/MT19937.h
+	${PHG_INC_DIR}/simset/SystemDependent.h\
+	${PHG_INC_DIR}/simset/LbTypes.h\
+	${PHG_INC_DIR}/simset/LbError.h\
+	${PHG_INC_DIR}/simset/LbDebug.h\
+	${PHG_INC_DIR}/simset/LbEnvironment.h\
+	${PHG_INC_DIR}/simset/LbFile.h\
+	${PHG_INC_DIR}/simset/LbMath.h\
+	${PHG_INC_DIR}/simset/LbMemory.h\
+	${PHG_INC_DIR}/simset/LbParamFile.h\
+	${PHG_INC_DIR}/simset/LbInterface.h\
+	${PHG_INC_DIR}/simset/LbConvert.h\
+	${PHG_INC_DIR}/simset/LbSort.h\
+	${PHG_INC_DIR}/simset/LbTiming.h\
+	${PHG_INC_DIR}/simset/Lb2DGeometry.h\
+	${PHG_INC_DIR}/simset/MT19937.h
 
 PHG_HDRS = \
 	$(PHG_LB_HDRS) \
-	${PHG_SRC}/Photon.h\
-	${PHG_SRC}/PhgIsotopes.h\
-	${PHG_SRC}/PhgParams.h\
-	${PHG_SRC}/PhgMath.h\
-	${PHG_SRC}/CylPos.h\
-	${PHG_SRC}/ProdTbl.h\
-	${PHG_SRC}/SubObj.h\
-	${PHG_SRC}/EmisList.h\
-	${PHG_SRC}/PhoTrk.h\
-	${PHG_SRC}/PhgBin.h\
-	${PHG_SRC}/ColTypes.h\
-	${PHG_SRC}/Collimator.h\
-	${PHG_SRC}/DetTypes.h\
-	${PHG_SRC}/Detector.h\
-	${PHG_SRC}/DetGeometric.h\
-	${PHG_SRC}/DetPlanar.h\
-	${PHG_SRC}/DetCylinder.h\
-	${PHG_SRC}/DetBlock.h\
-	${PHG_SRC}/ColSlat.h\
-	${PHG_SRC}/addrandoms.h\
-	${PHG_SRC}/addrandUsr.h\
-	${PHG_SRC}/phg.h
+	${PHG_INC_DIR}/simset/Photon.h\
+	${PHG_INC_DIR}/simset/PhgIsotopes.h\
+	${PHG_INC_DIR}/simset/PhgParams.h\
+	${PHG_INC_DIR}/simset/PhgMath.h\
+	${PHG_INC_DIR}/simset/CylPos.h\
+	${PHG_INC_DIR}/simset/ProdTbl.h\
+	${PHG_INC_DIR}/simset/SubObj.h\
+	${PHG_INC_DIR}/simset/EmisList.h\
+	${PHG_INC_DIR}/simset/PhoTrk.h\
+	${PHG_INC_DIR}/simset/PhgBin.h\
+	${PHG_INC_DIR}/simset/ColTypes.h\
+	${PHG_INC_DIR}/simset/Collimator.h\
+	${PHG_INC_DIR}/simset/DetTypes.h\
+	${PHG_INC_DIR}/simset/Detector.h\
+	${PHG_INC_DIR}/simset/DetGeometric.h\
+	${PHG_INC_DIR}/simset/DetPlanar.h\
+	${PHG_INC_DIR}/simset/DetCylinder.h\
+	${PHG_INC_DIR}/simset/DetBlock.h\
+	${PHG_INC_DIR}/simset/ColSlat.h\
+	${PHG_INC_DIR}/simset/addrandoms.h\
+	${PHG_INC_DIR}/simset/addrandUsr.h\
+	${PHG_INC_DIR}/simset/phg.h
 
 OBJECTS = \
 	${OBJ_DIR}/simset.o \

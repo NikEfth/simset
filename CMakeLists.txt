@@ -48,12 +48,14 @@ else()
   endif()
 endif()
 
-# ---- Usage requirements for consumers (STIR) ----
+# ---- Usage requirements for consumers (e.g. STIR) ----
+# local variable for location of include files
+set (INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src/include)
 add_library(simset_iface INTERFACE)
 add_library(SimSET::iface ALIAS simset_iface)
 set_target_properties(simset_iface PROPERTIES EXPORT_NAME iface)
 target_include_directories(simset_iface INTERFACE
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<BUILD_INTERFACE:${INCLUDE_DIR}>
   $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}>
 )
 target_compile_definitions(simset_iface INTERFACE ${SIMSET_DEFS}
@@ -106,7 +108,7 @@ if(UNIX AND NOT APPLE)
 endif()
 
 # ---- Install headers ----
-install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include"
+install(DIRECTORY "${INCLUDE_DIR}/"
   DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}"
   FILES_MATCHING PATTERN "*.h"
 )
