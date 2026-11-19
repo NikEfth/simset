@@ -65,14 +65,14 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
+#include "simset/LbTypes.h"
 
-#include "LbMacros.h"
-#include "LbError.h"
-#include "LbEnvironment.h"
-#include "LbInterface.h"
+#include "simset/LbMacros.h"
+#include "simset/LbError.h"
+#include "simset/LbEnvironment.h"
+#include "simset/LbInterface.h"
 
 /* PROTOTYPES */
 #ifdef GUIOS

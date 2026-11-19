@@ -47,16 +47,16 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbMacros.h"
-#include "LbMemory.h"
-#include "LbEnvironment.h"
-#include "LbFile.h"
-#include "LbError.h"
-#include "LbInterface.h"
-#include "LbDebug.h"
+#include "simset/LbTypes.h"
+#include "simset/LbMacros.h"
+#include "simset/LbMemory.h"
+#include "simset/LbEnvironment.h"
+#include "simset/LbFile.h"
+#include "simset/LbError.h"
+#include "simset/LbInterface.h"
+#include "simset/LbDebug.h"
 
 /* LOCAL CONSTANTS */
 /* This dictates the size of the units we read from disk.

@@ -59,12 +59,12 @@
 #include <ctype.h>
 #include <errno.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbFile.h"
+#include "simset/LbFile.h"
 
-#include "LbTypes.h"
-#include "LbError.h"
+#include "simset/LbTypes.h"
+#include "simset/LbError.h"
 
 #ifdef __MWERKS__
 #        include <Gestalt.h>

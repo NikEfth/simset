@@ -45,18 +45,18 @@
 #include <string.h>
 #include <stddef.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbError.h"
-#include "LbDebug.h"
-#include "LbEnvironment.h"
-#include "LbFile.h"
-#include "LbMemory.h"
-#include "LbInterface.h"
-#include "LbParamFile.h"
-#include "LbConvert.h"
-#include "LbHeader.h"
+#include "simset/LbTypes.h"
+#include "simset/LbError.h"
+#include "simset/LbDebug.h"
+#include "simset/LbEnvironment.h"
+#include "simset/LbFile.h"
+#include "simset/LbMemory.h"
+#include "simset/LbInterface.h"
+#include "simset/LbParamFile.h"
+#include "simset/LbConvert.h"
+#include "simset/LbHeader.h"
 
 /* LOCAL CONSTANTS */
 

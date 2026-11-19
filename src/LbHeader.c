@@ -33,12 +33,12 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbError.h"
-#include "LbMemory.h"
-#include "LbHeader.h"
+#include "simset/LbTypes.h"
+#include "simset/LbError.h"
+#include "simset/LbMemory.h"
+#include "simset/LbHeader.h"
 
 #ifdef _POSIX_SOURCE
 #        include <unistd.h>

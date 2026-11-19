@@ -47,7 +47,7 @@
 
 #include <stdio.h>
 
-#include "MT19937.h"
+#include "simset/MT19937.h"
 
 /* Period parameters */
 #define N 624

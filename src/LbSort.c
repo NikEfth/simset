@@ -53,11 +53,11 @@
  *
  *********************************************************************************/
 
-#include "LbSort.h"
+#include "simset/LbSort.h"
 
 #include <string.h>
 
-#include "LbMemory.h"
+#include "simset/LbMemory.h"
 
 /*	LOCAL CONSTANTS */
 #define LBSORT_Black 0 /* RBTree black node color */

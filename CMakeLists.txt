@@ -53,7 +53,7 @@ add_library(simset_iface INTERFACE)
 add_library(SimSET::iface ALIAS simset_iface)
 set_target_properties(simset_iface PROPERTIES EXPORT_NAME iface)
 target_include_directories(simset_iface INTERFACE
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/simset>
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${VERSION_DIR}>
 )
 target_compile_definitions(simset_iface INTERFACE ${SIMSET_DEFS}

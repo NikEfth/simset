@@ -62,9 +62,9 @@
  *
  ********************************************************************************/
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTiming.h"
+#include "simset/LbTiming.h"
 
 /*	CONSTANTS */
 

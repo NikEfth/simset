@@ -46,13 +46,13 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbMacros.h"
-#include "LbError.h"
-#include "LbDebug.h"
-#include "LbInterface.h"
+#include "simset/LbTypes.h"
+#include "simset/LbMacros.h"
+#include "simset/LbError.h"
+#include "simset/LbDebug.h"
+#include "simset/LbInterface.h"
 
 /*	CONSTANTS */
 

@@ -69,12 +69,12 @@
 #include <string.h>
 #include <ctype.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbError.h"
-#include "LbFile.h"
-#include "LbParamFile.h"
+#include "simset/LbTypes.h"
+#include "simset/LbError.h"
+#include "simset/LbFile.h"
+#include "simset/LbParamFile.h"
 
 /*	LOCAL CONSTANTS */
 #define LBPF_PARAM_LEN_MAX 256

@@ -81,26 +81,26 @@
 
 #include <stdio.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbMacros.h"
-#include "LbError.h"
-#include "LbParamFile.h"
-#include "LbHeader.h"
+#include "simset/LbTypes.h"
+#include "simset/LbMacros.h"
+#include "simset/LbError.h"
+#include "simset/LbParamFile.h"
+#include "simset/LbHeader.h"
 
-#include "Photon.h"
-#include "PhgParams.h"
-#include "PhgMath.h"
-#include "ColTypes.h"
-#include "DetTypes.h"
-#include "ColParams.h"
-#include "DetParams.h"
-#include "CylPos.h"
-#include "PhoHFile.h"
-#include "phg.h"
-#include "PhgUsrBin.h"
-#include "PhgBin.h"
+#include "simset/Photon.h"
+#include "simset/PhgParams.h"
+#include "simset/PhgMath.h"
+#include "simset/ColTypes.h"
+#include "simset/DetTypes.h"
+#include "simset/ColParams.h"
+#include "simset/DetParams.h"
+#include "simset/CylPos.h"
+#include "simset/PhoHFile.h"
+#include "simset/phg.h"
+#include "simset/PhgUsrBin.h"
+#include "simset/PhgBin.h"
 
 /* Global variables */
 /*

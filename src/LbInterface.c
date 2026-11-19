@@ -77,15 +77,15 @@
 #include <ctype.h>
 #include <stdarg.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
 /*	CONSTANTS */
 #define LBIN_MAXLINE 65
 
-#include "LbTypes.h"
-#include "LbMacros.h"
-#include "LbError.h"
-#include "LbInterface.h"
+#include "simset/LbTypes.h"
+#include "simset/LbMacros.h"
+#include "simset/LbError.h"
+#include "simset/LbInterface.h"
 
 /*	LOCAL TYPES */
 typedef struct {

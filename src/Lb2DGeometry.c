@@ -66,12 +66,12 @@
  *
  *********************************************************************************/
 
-#include "Lb2DGeometry.h"
+#include "simset/Lb2DGeometry.h"
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbMath.h"
+#include "simset/LbTypes.h"
+#include "simset/LbMath.h"
 
 /*	CONSTANTS */
 

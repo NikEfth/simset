@@ -113,28 +113,28 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "SystemDependent.h"
+#include "simset/SystemDependent.h"
 
-#include "LbTypes.h"
-#include "LbMacros.h"
-#include "LbError.h"
-#include "LbParamFile.h"
-#include "LbHeader.h"
-#include "LbFile.h"
-#include "LbInterface.h"
+#include "simset/LbTypes.h"
+#include "simset/LbMacros.h"
+#include "simset/LbError.h"
+#include "simset/LbParamFile.h"
+#include "simset/LbHeader.h"
+#include "simset/LbFile.h"
+#include "simset/LbInterface.h"
 
-#include "Photon.h"
-#include "PhgParams.h"
-#include "PhgMath.h"
-#include "ColTypes.h"
-#include "ColParams.h"
-#include "DetTypes.h"
-#include "DetParams.h"
-#include "CylPos.h"
-#include "PhoHFile.h"
-#include "PhgHdr.h"
-#include "phg.h"
-#include "PhgBin.h"
+#include "simset/Photon.h"
+#include "simset/PhgParams.h"
+#include "simset/PhgMath.h"
+#include "simset/ColTypes.h"
+#include "simset/ColParams.h"
+#include "simset/DetTypes.h"
+#include "simset/DetParams.h"
+#include "simset/CylPos.h"
+#include "simset/PhoHFile.h"
+#include "simset/PhgHdr.h"
+#include "simset/phg.h"
+#include "simset/PhgBin.h"
 
 #define MAX_SCATTERS 20 /* Maximum number of scatters accounted for */
 
