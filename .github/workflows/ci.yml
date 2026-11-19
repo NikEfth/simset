@@ -50,4 +50,10 @@ jobs:
         # (line is only ok if there's only one!)
         location=`echo ../install/lib/cmake/SimSET-*`
         cmake -B build -S . -DSimSET_DIR=${location}
+        make -C build
+
+    - name: Run external
+      run: |
+        cd test_external
+        build/use_simset
 
